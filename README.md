@@ -6,6 +6,12 @@ A simple inline-script collector to execute them later after dependencies has be
 There are cases where you want to stick to load js libs at the end of the html but the backend framework cannot collect the component's related js files instead they vomit them inline.
 With ColumboJS loader you can delay loading dependencies like the AMD way but it is more lightweight. Like a ponie. With wings.
 
+###Demo
+http://jsbin.com/uxedag/2/quiet
+
+#Nifty debug console
+![](https://raw.github.com/zsitro/ColumboJS/master/screenshot_console.jpg)
+
 #Usage example
 
 ```html

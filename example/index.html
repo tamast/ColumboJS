@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<!--
+  Created using jsbin.com
+  Source can be edited via http://jsbin.com/uxedag/2/edit
+-->
+<head>
+<meta charset=utf-8 />
+<title>Zsitro - JS Bin</title>
+	<script src="../columbo.min.js"></script>
+
+<style id="jsbin-css">
+
+</style>
+</head>
+<body>
+	<script>
+		Columbo.add('Red colorizer', function( $ ){  
+			// Your component's script here
+			console.log('Now I recolor this DIV');
+			var el = $('.makeMeRed');
+			el.css('color','red');
+			console.log('The color has become:', el.css('color'));
+			console.log('Yeeey! I am done with this recoloring thing.');
+		});
+	</script>
+	
+	<div class="makeMeRed">I'm red.</div>
+
+	<script>
+		Columbo.add('Bad Mr. Kitty', function( $ ){  
+			// Your component's script here
+			console.log('Meow!');			
+			epic.fail = 1;
+
+			console.log('Mr. Kitty can haz js error.');
+		});
+	</script>
+	
+	
+
+
+
+	
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	
+	<script>
+		console.log('/* Run collected sripts\n ***********************************/');
+		Columbo.run($);
+	</script>
+	
+<script>
+
+</script>
+</body>
+</html>

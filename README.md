@@ -1,3 +1,5 @@
+![columbo](https://raw.github.com/zsitro/ColumboJS/master/columbo.png)
+
 ColumboJS
 =========
 

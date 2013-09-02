@@ -49,7 +49,7 @@
 
     exports.run = function ($) {
         $.each(collector, function (i, el) {
-			debug(el[0], "group");
+            debug(el[0], "group");
             try {
                 el[1]($);
             } catch (err) {

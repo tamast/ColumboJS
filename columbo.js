@@ -49,16 +49,16 @@
 
     exports.run = function ($) {
         $.each(collector, function (i, el) {
+			debug(el[0], "group");
             try {
-                debug(el[0], "group");
                 el[1]($);
-                debug(el[0], "groupEnd");
             } catch (err) {
                 debug(
                     "Your script failed: \n\n\tComponent: '" + el[0] + "'\n\n" +
                     "\tError: " + err.message + "\n", "error");
 
             }
+			debug(el[0], "groupEnd");
             debug("Script has been executed | '" + el[0] + "' | @row: " + (i + 1));
             el.length = 0;
         });
